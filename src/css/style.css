@@ -1,0 +1,62 @@
+.collapsible {
+  background-color: #3f3fe4;
+  border-radius: 8px;
+  color: #fff;
+  font-size: inherit;
+  padding: 20px 30px;
+}
+
+.collapsible:hover {
+  background-color: #6aa5e7;
+
+}
+
+.active {
+    outline: 4px solid #8383ff;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.widget {
+    background-color: #fff;
+    position: relative;
+    padding: 30px;
+    width: 600px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+   background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+
